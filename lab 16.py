@@ -30,9 +30,9 @@ def create_newSite():
   for line in openingHTML:
     output.write(line)
   for line in headlines:
-    output.write(line + "<br>")
+    output.write("<br>" + line) 
   for line in closingHTML:
-    output.write(line)
+    output.write("<br>" + line)
   output.close()
 
 #
